@@ -3,8 +3,8 @@ COMP 163 - Project 2: Character Abilities Showcase
 Name: Ameir/Aj Dawson
 Date: 11/09/2025
 
-AI Usage: [Document any AI assistance used]
-Example: AI helped with inheritance structure and method overriding concepts
+AI Usage: AI assistance was used to review inheritance design and provide example method overrides.
+All final logic verified and understood by me. 
 """
 
 import random
