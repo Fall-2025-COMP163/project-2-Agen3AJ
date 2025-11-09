@@ -236,7 +236,7 @@ class Weapon:
         """
         Display information about this weapon.
         """
-        print(f"⚔️ Weapon: {self.name} | Damage Bonus: +{self.damage_bonus}")
+        print(f"Weapon: {self.name} | Damage Bonus: +{self.damage_bonus}")
 
 # ============================================================================
 # MAIN PROGRAM FOR TESTING (YOU CAN MODIFY THIS FOR TESTING)
