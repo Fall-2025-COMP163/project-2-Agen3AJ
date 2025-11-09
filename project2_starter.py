@@ -196,7 +196,7 @@ class Rogue(Player):
         Create a rogue with appropriate stats.
         Rogues should have: medium health, medium strength, medium magic
         """
-        super().__init__(name, "Rouge", 90, 12, 10)
+        super().__init__(name, "Rogue", 90, 12, 10)
         
     def attack(self, target):
         """
@@ -205,10 +205,10 @@ class Rogue(Player):
         """
         if random.randint(1, 10) <= 3:
             damage = self.strength * 2
-            print(f"💥 {self.name} (Rogue) lands a CRITICAL HIT on {target.name} for {damage} damage!")
+            print(f"{self.name} (Rogue) lands a CRITICAL HIT on {target.name} for {damage} damage!")
         else:
             damage = self.strength
-            print(f"🗡️ {self.name} (Rogue) strikes {target.name} for {damage} damage.")
+            print(f"{self.name} (Rogue) strikes {target.name} for {damage} damage.")
         target.take_damage(damage)
         
     def sneak_attack(self, target):
@@ -275,7 +275,7 @@ if __name__ == "__main__":
     rogue.sneak_attack(target3)
     
     # TODO: Test composition with weapons
-    print("\n🗡️ Testing Weapon Composition:")
+    print("\n Testing Weapon Composition:")
     sword = Weapon("Iron Sword", 10)
     staff = Weapon("Magic Staff", 15)
     dagger = Weapon("Steel Dagger", 8)
@@ -285,7 +285,7 @@ if __name__ == "__main__":
     dagger.display_info()
     
     # TODO: Test the battle system
-    print("\n⚔️ Testing Battle System:")
+    print("\n Testing Battle System:")
     battle = SimpleBattle(warrior, mage)
     battle.fight()
     
